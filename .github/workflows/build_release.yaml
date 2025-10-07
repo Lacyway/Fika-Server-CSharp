@@ -63,6 +63,6 @@ jobs:
           body: ${{ inputs.release_notes }}
           draft: true
           files: |
-            ${{ inputs.release_name }}.zip
+            ${{ inputs.release_name }}.7z
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
