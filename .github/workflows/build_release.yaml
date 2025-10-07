@@ -48,7 +48,7 @@ jobs:
         run: |
           mkdir -p user/mods/fika-server
           cp -r output/FikaServer.dll user/mods/fika-server
-          cp -r FikaServer/assets user/mods/fika-server
+          cp -r FikaServer/Assets user/mods/fika-server/assets
           cp LICENSE.md user/mods/fika-server
 
       - name: Zip the build and loose files
