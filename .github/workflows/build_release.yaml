@@ -41,6 +41,9 @@ jobs:
       - name: Publish the project
         run: dotnet publish FikaServer/FikaServer.csproj --configuration ${{ inputs.build_type }} --no-restore --output output/
 
+      - name: List publish output
+        run: ls -R output
+
       - name: Copy loose files
         run: |
           mkdir -p user/mods/fika-server
